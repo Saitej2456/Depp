@@ -17,7 +17,20 @@ const app = express();
 
 app.use(
   cors({
-    origin: env.FRONTEND_URL,
+    origin: (origin, callback) => {
+      const allowed = [
+        env.FRONTEND_URL,
+        "http://localhost:5173",
+        "http://localhost:4173",
+      ].filter(Boolean);
+
+      // Allow requests with no origin (e.g. Postman, server-to-server)
+      if (!origin || allowed.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error(`CORS: origin ${origin} not allowed`));
+      }
+    },
     credentials: true,
   })
 );
@@ -46,11 +59,11 @@ app.use("/api/v1/reports", reportRoutes);
 app.use("/api/v1/nutrients", nutrientRoutes);
 app.use("/api/v1/ai", aiRoutes);
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   return res.status(404).json({
     error: {
       code: "RESOURCE_NOT_FOUND",
-      message: "Route not found"
+      message: `Route not found: ${req.method} ${req.originalUrl}`
     }
   });
 });
