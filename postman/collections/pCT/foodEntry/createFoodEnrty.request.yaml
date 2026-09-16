@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/food-entries
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "foodName": "Paneer Curry",
+      "mealType": "DINNER",
+      "eatenAt": "2026-09-15T18:30:00Z",
+      "quantity": 1,
+      "quantityUnit": "SERVING",
+      "calories": 500,
+      "proteinG": 25,
+      "carbsG": 20,
+      "fatG": 35
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_1ddb}}"
+order: 7000

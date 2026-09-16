@@ -1,0 +1,9 @@
+$kind: http-request
+name: updateWeightLog
+url: http://localhost:5000/api/v1/weight-logs/sfgf
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0kod}}"
+order: 4636

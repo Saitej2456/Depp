@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/goals
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"calorieTarget\": 2000,\r
+
+    \  \"proteinTarget\": 140,\r
+
+    \  \"carbsTarget\": 220,\r
+
+    \  \"fatTarget\": 65,\r
+
+    \  \"weightGoal\": 78,\r
+
+    \  \"effectiveFrom\": \"2026-08-01T00:00:00+05:30\",\r
+
+    \  \"effectiveTo\": \"2026-09-14T00:00:00+05:30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0s5r}}"
+order: 2000

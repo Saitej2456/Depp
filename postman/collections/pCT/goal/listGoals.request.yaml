@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/goals
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0652}}"
+order: 542594002061022

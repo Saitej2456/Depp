@@ -1,0 +1,47 @@
+$kind: collection
+variables:
+  - key: supabase_service_role_api_key_06wd
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0lgl
+    secret: true
+    disabled: false
+  - key: json_web_token_0s5r
+    secret: true
+    disabled: false
+  - key: json_web_token_0tx0
+    secret: true
+    disabled: false
+  - key: json_web_token_0kod
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0kod
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0s5r
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0q04
+    secret: true
+    disabled: false
+  - key: json_web_token_06wd
+    secret: true
+    disabled: false
+  - key: json_web_token_1ddb
+    secret: true
+    disabled: false
+  - key: json_web_token_0pd0
+    secret: true
+    disabled: false
+  - key: json_web_token_021l
+    secret: true
+    disabled: false
+  - key: json_web_token_0652
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0652
+    secret: true
+    disabled: false
+  - key: json_web_token_145x
+    secret: true
+    disabled: false

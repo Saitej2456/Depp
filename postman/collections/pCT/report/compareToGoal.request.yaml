@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/reports/goal-comparison?date=2026-09-14&foo=bar
+method: GET
+queryParams:
+  date: 2026-09-14
+  foo: bar
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_145x}}"
+order: 2000

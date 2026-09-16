@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/goals/srgfrf
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0kod}}"
+order: 4463099359820547

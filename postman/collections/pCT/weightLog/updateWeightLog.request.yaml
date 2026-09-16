@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/weight-logs/c2a684d0-5ae8-4fb4-b7b8-731bd36e833f
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"weightKg\": -5\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0kod}}"
+order: 5000

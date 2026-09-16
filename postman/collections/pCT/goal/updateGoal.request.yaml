@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/goals/a6ff7ded-a17b-41c2-a6b3-803f657c527b
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"effectiveTo\": \"2026-09-20T00:00:00+05:30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0kod}}"
+order: 4256468316052927

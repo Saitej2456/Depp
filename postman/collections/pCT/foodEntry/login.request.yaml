@@ -1,0 +1,26 @@
+$kind: http-request
+description: ""
+url: http://localhost:5000/api/v1/auth/login
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //   \"email\": \"another2@example.com\",\r
+
+    //   \"password\": \"Password123!\"\r
+
+    // }\r
+
+    \r
+
+    {\r
+
+    \  \"email\": \"refresh-test@example.com\",\r
+
+    \  \"password\": \"Password123!\"\r
+
+    }"
+auth:
+  type: noauth
+order: 5000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/reports/calories?from=2026-09-13&to=2026-09-16
+method: GET
+queryParams:
+  from: 2026-09-13
+  to: 2026-09-16
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0pd0}}"
+order: 4000

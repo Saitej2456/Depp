@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/weight-logs
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"weightKg\": 78.5,\r
+
+    \  \"loggedAt\": \"2026-09-14T07:00:00+05:30\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0kod}}"
+order: 1000

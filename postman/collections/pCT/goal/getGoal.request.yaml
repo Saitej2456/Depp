@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:5000/api/v1/goals/a6ff7ded-a17b-41c2-a6b3-803f657c527b
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0652}}"
+order: 3823563013952374

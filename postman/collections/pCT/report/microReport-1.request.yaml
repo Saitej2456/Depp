@@ -1,0 +1,12 @@
+$kind: http-request
+name: microReport
+url: http://localhost:5000/api/v1/reports/macros?from=2026-09-15&to=2026-09-16
+method: GET
+queryParams:
+  from: 2026-09-15
+  to: 2026-09-16
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_021l}}"
+order: 1804
